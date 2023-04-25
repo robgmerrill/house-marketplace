@@ -5,6 +5,8 @@ import ForgotPassword from './pages/ForgotPassword';
 import Offers from './pages/Offers';
 import Profile from './pages/Profile';
 import Signin from './pages/Signin';
+// import SignUp from './pages/Signup';
+// import Signup from './pages/Signup';
 import Signup from './pages/Signup';
 import Navbar from './components/Navbar';
 

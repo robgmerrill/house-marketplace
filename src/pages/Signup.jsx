@@ -5,7 +5,7 @@ import {db} from '../firebase.config'
 import { ReactComponent as ArrowRightIcon } from '../assets/svg/keyboardArrowRightIcon.svg'
 import visibilityIcon from '../assets/svg/visibilityIcon.svg'
 
-function SignUp() {
+function Signup() {
   const [showPassword, setShowPassword] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
@@ -109,4 +109,4 @@ function SignUp() {
   )
 }
 
-export default SignUp
+export default Signup
