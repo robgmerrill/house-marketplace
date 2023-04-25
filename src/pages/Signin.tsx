@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
+
 import { ReactComponent as ArrowRightIcon} from '../assets/svg/keyboardArrowRightIcon.svg'
 import visibilityIcon from '../assets/svg/visibilityIcon.svg'
 
@@ -18,12 +19,14 @@ function Signin() {
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log(e.target.value)
     setFormData((prevState) => ({
-        // this creates a shallow copy of the previous state object. In this case, the spread operator is used to expand the properties of the prevState object into the new object being created. This creates a new object with all the properties of the previous state object.By using a shallow copy of the previous state object, the code is able to preserve any properties that were not updated by the onChange event. This is important because React components should always update their state immutably, meaning that they should create a new object or array rather than modifying the existing one.
         ...prevState,
-        // this will be email or password. Depending on the id value of the input element. 
+        
         [e.target.id]: e.target.value
     }))
   }
+
+
+  
 
   return (
     <>
